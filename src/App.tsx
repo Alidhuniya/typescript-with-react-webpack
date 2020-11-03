@@ -3,6 +3,7 @@ import React, {Component, Fragment} from "react";
 import Apptwo from "./Apptwo";
 import "./App.scss";
 import logo from "./assets/logo.svg";
+import {name} from "./appp";
 
 interface Props {
     foo: string;
@@ -17,6 +18,7 @@ class App extends Component<Props, {}> {
 
             <Fragment>
             <header className = "header">
+                <p>{name}</p>
                 <p>{this.props.foo}</p>
             <div>
              <img src={logo} />
