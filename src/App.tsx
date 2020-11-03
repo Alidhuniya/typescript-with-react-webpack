@@ -4,9 +4,11 @@ import Apptwo from "./Apptwo";
 import "./App.scss";
 import logo from "./assets/logo.svg";
 
+interface Props {
+    foo: string;
+  }
 
-
-class App extends Component {
+class App extends Component<Props, {}> {
 
    
     render() {
@@ -15,6 +17,7 @@ class App extends Component {
 
             <Fragment>
             <header className = "header">
+                <p>{this.props.foo}</p>
             <div>
              <img src={logo} />
             </div>
